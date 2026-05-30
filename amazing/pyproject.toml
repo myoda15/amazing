@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mazegen"
+version = "1.0.0"
+description = "Reusable maze generator with solver and a '42' pattern."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "login1" },
+    { name = "login2" },
+]
+keywords = ["maze", "generator", "backtracker", "prim", "42"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[tool.setuptools]
+py-modules = ["mazegen"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+exclude = ['\.venv/', 'build/', 'dist/']
