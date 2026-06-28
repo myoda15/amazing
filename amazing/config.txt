@@ -1,0 +1,21 @@
+# A-Maze-ing default configuration file.
+# One KEY=VALUE pair per line. Blank lines and lines starting with '#'
+# are ignored.
+
+# --- Mandatory keys ---
+WIDTH=30
+HEIGHT=28
+ENTRY=0,0
+EXIT=29,27
+OUTPUT_FILE=maze.txt
+PERFECT=True
+
+# --- Optional keys ---
+# SEED: integer for reproducible mazes (remove for a random maze).
+SEED=42
+# ALGORITHM: backtracker | prim
+ALGORITHM=backtracker
+# DRAW_42: embed the decorative "42" pattern when the maze is big enough.
+DRAW_42=True
+# BRAID_FACTOR: 0.0-1.0, density of extra openings when PERFECT=False.
+BRAID_FACTOR=0.12
